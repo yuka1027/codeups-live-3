@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.p-service__items {
+    margin-top: rem(30);
+}
+
+.p-service__item +
+.p-service__item {
+    margin-top: rem(40);
+}
+
+.p-service__btn {
+    text-align: center;
+    margin-top: rem(30);
+}

@@ -21,10 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -144,32 +148,168 @@
       </div>
     </div>
   </section>
-  <div class="c-section-header">
-    <h2 class="c-section-header__engtitle">contact</h2>
-    <p class="c-section-header__title">お問い合わせ</p>
-  </div>
 
-  <div class="c-section-header">
-    <h2 class="c-section-header__engtitle">recruit</h2>
-    <p class="c-section-header__jatitle">採用情報</p>
-  </div>
+  <section class="l-topService p-service">
+    <div class="p-service__inner l-inner">
+      <div class="p-service__header">
+        <div class="c-section-header">
+          <h2 class="c-section-header__engtitle">service</h2>
+          <p class="c-section-header__jatitle">事業内容</p>
+        </div>
+      </div>
+      <div class="p-service__items">
+        <!-- ループ -->
+        <div class="p-service__item p-card">
+          <div class="p-card__img">
+            <img src="./images/common/service01.jpg" alt="新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。">
+          </div>
+          <div class="p-card__body">
+            <h3 class="p-card__title">Webサイト制作</h3>
+            <p class="p-card__text">新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。</p>
+          </div>
+        </div>
+        <!-- ループ終了 -->
+        <div class="p-service__item p-card">
+          <div class="p-card__img">
+            <img src="./images/common/service02.jpg" alt="サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。">
+          </div>
+          <div class="p-card__body">
+            <h3 class="p-card__title">Webサイト制作</h3>
+            <p class="p-card__text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。</p>
+          </div>
+        </div>
+        <div class="p-service__item p-card">
+          <div class="p-card__img">
+            <img src="./images/common/service03.jpg" alt="スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。">
+          </div>
+          <div class="p-card__body">
+            <h3 class="p-card__title">アプリ開発</h3>
+            <p class="p-card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-service__btn">
+        <a href="#" class="c-button">more</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="c-section-header">
-    <h2 class="c-section-header__engtitle">company</h2>
-    <p class="c-section-header__jatitle">私たちについて</p>
-  </div>
+  <section class="l-topWorks p-works">
+    <div class="p-works__inner l-inner">
+      <div class="p-works__content">
+        <div class="p-works__images">
+          <!-- Swiper -->
+          <div class="swiper js-works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/works01.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/service01.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./images/common/service02.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-works-pagination"></div>
+        </div>
+        <div class="p-works__text-body">
+          <div class="p-works__title">
+            <div class="c-section-header">
+              <p class="c-section-header__engtitle">works</p>
+              <h2 class="c-section-header__jatitle">制作実績</h2>
+            </div>
+          </div>
+          <div class="p-works__text-block">
+            <p class="p-works__text">
+              様々なジャンルのWebサイト制作が可能です。<br>
+              ご購入やお申込み数の増加などを実現します！
+            </p>
+          </div>
+          <div class="p-works__btn">
+            <a href="#" class="c-button">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="c-section-header">
-    <h2 class="c-section-header__engtitle">works</h2>
-    <p class="c-section-header__jatitle">制作実績</p>
-  </div>
+  <section class="l-topCompany p-company">
+    <div class="p-company__inner l-inner">
+      <div class="p-company__header">
+        <div class="c-section-header">
+          <h2 class="c-section-header__engtitle">company</h2>
+          <p class="c-section-header__jatitle">私たちについて</p>
+        </div>
+      </div>
+      <div class="p-company__contents">
+        <h3 class="p-company__subtitle"><span class="p-company__bg-yellow">サイトのゴール&nbsp;=</span><br class="u-mobile">
+          <span class="p-company__bg-yellow">夢を叶えること</span></h3>
+          <div class="p-company__content">
+            <p class="p-company__text">
+              お客様の夢を叶えること。<br>
+              それがWebサイトのゴールであり、<br>
+              私たちが目指すことです。<br>
+              だからこそちゃんと成果を出すサイトを<br>
+              全力でお作りします。<br>
+              お客様の笑顔を見たい。<br>
+              夢を実現する手助けをさせてください。
+            </p>
+          </div>
+          <div class="p-company__btn">
+            <a href="#" class="c-button">more</a>
+          </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="c-section-header">
-    <h2 class="c-section-header__engtitle">service</h2>
-    <p class="c-section-header__jatitle">事業内容</p>
-  </div>
+  <section class="l-topRecruit p-recruit">
+    <div class="p-recruit__inner l-inner">
+      <div class="p-recruit__img">
+        <img src="./images/common/recruit.jpg" alt="">
+      </div>
+      <div class="p-recruit__contents">
+        <div class="p-recruit__header">
+          <div class="c-section-header">
+            <h2 class="c-section-header__engtitle">recruit</h2>
+            <p class="c-section-header__jatitle">採用情報</p>
+          </div>
+        </div>
+        <div class="p-recruit__text-block">
+          <p class="p-recruit__text">私たちと一緒に働きませんか？</p>
+        </div>
+        <div class="p-recruit__btn">
+          <a href="#" class="c-button">more</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <a href="#" class="c-button">more</a>
+  <section class="l-topContact p-contact">
+    <div class="p-contact__inner l-inner">
+      <div class="p-contact__header">
+        <div class="c-section-header">
+          <h2 class="c-section-header__engtitle">contact</h2>
+          <p class="c-section-header__jatitle">お問い合わせ</p>
+        </div>
+      </div>
+      <div class="p-contact__contents">
+        <div class="p-contact__text-block">
+          <p class="p-contact__text">Webサイトの制作のご依頼やお見積りなど、<br>
+            お気軽にご相談ください。
+          </p>
+        </div>
+        <div class="p-contact__btn">
+          <a href="#" class="c-button">more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <a href="#" class="c-button">more</a> -->
 
   <footer class="l-footer p-footer">
     <div class="p-footer__inner">
