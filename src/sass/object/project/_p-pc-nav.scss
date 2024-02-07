@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+
+.p-pc-nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.p-pc-nav__item {
+    height: inherit;
+}
+
+.p-pc-nav__item a {
+    font-size: rem(14);
+    font-family: $english-family;
+    letter-spacing: 0.05em;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding-left: rem(12);
+    padding-right: rem(13);
+}
+
+.p-pc-nav__item:last-child a {
+    padding-right: rem(0);
+}

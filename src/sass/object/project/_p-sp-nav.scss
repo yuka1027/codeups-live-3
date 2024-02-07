@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-sp-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.p-sp-nav.is-active {
+    display: block;
+}
+
+.p-sp-nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: rem(100) 0;
+}
+
+.p-sp-nav__item {
+    width: 100%;
+}
+
+.p-sp-nav__item a {
+    color: $white;
+    font-weight: $bold;
+    font-size: rem(15);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: $english-family;
+    padding: rem(10) 0;
+    display: block;
+    text-align: center;
+}

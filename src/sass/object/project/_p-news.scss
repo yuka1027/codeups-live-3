@@ -1,0 +1,18 @@
+@use 'global' as *;
+
+.p-news__items {
+    margin-top: rem(32);
+}
+
+// .p-news__item +
+// .p-news__item {
+//     margin-top: rem(40);
+// }
+
+// .p-news__item:nth-child(n + 2) {
+//     margin-top: rem(40);
+// }
+
+.p-news__item:not(:first-child) {
+    margin-top: rem(40);
+}
