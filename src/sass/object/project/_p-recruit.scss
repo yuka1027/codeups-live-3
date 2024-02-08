@@ -1,11 +1,27 @@
 @use 'global' as *;
 
+
 .p-recruit__inner.l-inner {
     padding: 0;
+    @include mq("md") {
+        max-width: rem(1110);
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
+}
+
+.p-recruit__wrapper {
+    @include mq("md") {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .p-recruit__img {
     position: relative;
+    @include mq("md") {
+        width: 59.90%;
+    }
 }
 
 .p-recruit__img::before {
@@ -29,6 +45,9 @@
     padding-bottom: rem(56);
     text-align: center;
     background-color: #F7F7F7;
+    @include mq("md") {
+        width: 40.1%;
+    }
 }
 
 .p-recruit__text-block {

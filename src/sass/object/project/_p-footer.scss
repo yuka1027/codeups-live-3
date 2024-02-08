@@ -20,4 +20,7 @@
     letter-spacing: 0.05em;
     color: #A798B7;
     line-height: 1;
+    @include mq("md") {
+        margin-top: rem(22);
+    }
 }

@@ -6,6 +6,11 @@
     background: transparent;
     position: fixed;
     z-index: 1000;
+    transition: 0.3s;
+}
+
+.p-header.change {
+    background: #21054D;
 }
 
 .p-header__inner {

@@ -7,10 +7,24 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    @include mq("md") {
+        padding-top: rem(136);
+        background-image: url(../images/common/company-bg-pc.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        max-width: rem(1300);
+        margin-left: rem(20);
+        margin-right: rem(20);
+    }
 }
 
 .p-company__contents {
     margin-top: rem(30);
+    @include mq("md") {
+        margin-top: rem(40);
+        text-align: center;
+    }
 }
 
 .p-company__subtitle {
@@ -20,6 +34,25 @@
     letter-spacing: 0.05em;
     line-height: 1.5;
     font-weight: $bold;
+    @include mq("md") {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.p-company__subtitle::before {
+    @include mq("md") {
+        content: '';
+        display: block;
+        width: 100%;
+        height: rem(12);
+        background: $yellow;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
 }
 
 .p-company__bg-yellow {
@@ -32,6 +65,9 @@
         transparent 95%,
         transparent 100%
     );
+    @include mq("md") {
+        background: none;
+    }
 }
 
 .p-company__content {

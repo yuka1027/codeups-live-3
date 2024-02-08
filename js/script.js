@@ -65,4 +65,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
+  // headerスクロールで色が変わる
+  function FixedAnime() {
+    // メインビューの高さを取得
+    var height = Math.round($('.js-news').offset().top);
+    var scroll = $(window).scrollTop();
+    if (scroll >= height){//news-sectionまで来たら
+          $('.js-header').addClass('change');//js-headerについているchangeというクラス名を付与
+    }else{
+          $('.js-header').removeClass('change');//changeというクラス名を除去
+    }
+  }
+
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+  });
+
+  // ページが読み込まれたらすぐに動かしたい場合の記述
+  $(window).on('load', function () {
+    FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+  });
+
 });
