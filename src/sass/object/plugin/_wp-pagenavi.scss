@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+/*wp-pagenavi base*/
+.wp-pagenavi {
+	display: flex;
+    justify-content: center;
+    gap: rem(10);
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	white-space: nowrap;
+	border-radius: 22.5px;
+	transition: 0.3s ease;
+	text-align: center;
+	text-decoration:none;
+    width: rem(45);
+    height: rem(45);
+    color: $white;
+    background: transparent linear-gradient(180deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
+    font-weight: $bold;
+    font-family: $english-family;
+    font-size: rm(20);
+    cursor: pointer;
+}
+
+.wp-pagenavi a:hover {
+    opacity: 1;
+    color: $purple;
+    background: #F1EBF8;
+    border: 1px solid $purple;
+}
+
+.wp-pagenavi span.current{
+	color: $purple;
+	background: #F1EBF8;
+}

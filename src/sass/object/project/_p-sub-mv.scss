@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.p-sub-mv {
+    width: 100%;
+    height: rem(190);
+    background-image: url(../images/common/sub-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include mq("md") {
+        height: rem(240);
+    }
+}
+
+.p-sub-mv__title {
+    padding-top: rem(94);
+}

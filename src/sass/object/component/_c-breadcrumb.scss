@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.c-breadcrumb {
+    background-color: #f7f7f7;
+    padding: rem(5) 0;
+    font-size: rem(11);
+    font-family: $english-family;
+    letter-spacing: 0.05em;
+}
