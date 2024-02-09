@@ -37,3 +37,14 @@
     color: $white;
 }
 
+.c-section-header__subpage {
+    font-size: rem(24);
+    font-family: $english-family;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    font-weight: $bold;
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}
+
