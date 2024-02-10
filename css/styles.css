@@ -343,6 +343,12 @@ select::-ms-expand {
   letter-spacing: 0.05em;
 }
 
+.c-breadcrumb__inner.l-inner {
+  max-width: 1150px;
+  max-width: 71.875rem;
+  width: 100%;
+}
+
 .c-button {
   display: inline-block;
   text-align: center;
@@ -1198,8 +1204,8 @@ textarea {
     background-position: center center;
     background-size: contain;
     max-width: 81.25rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -1798,6 +1804,7 @@ textarea {
 }
 
 .p-page-contact__text {
+  color: #333;
   font-size: 14px;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
@@ -1815,11 +1822,17 @@ textarea {
   padding: 30px;
   padding: 1.875rem;
   background: #F7F7F7;
+  max-width: 600px;
+  max-width: 37.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-page-contact__content {
     margin-top: 2.5rem;
     padding: 5.625rem;
+    max-width: 69.375rem;
   }
 }
 

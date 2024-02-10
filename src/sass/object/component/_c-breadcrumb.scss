@@ -7,3 +7,8 @@
     font-family: $english-family;
     letter-spacing: 0.05em;
 }
+
+.c-breadcrumb__inner.l-inner {
+    max-width: rem(1150);
+    width: 100%;
+}
