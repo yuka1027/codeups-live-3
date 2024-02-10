@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>CodeUpsライブコーディング第三章</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="l-header p-header js-header">
+    <div class="p-header__inner">
+      <div class="p-header__logo">
+        <a href="" class="p-header__logoLink">pon&nbsp;design</a>
+      </div>
+      <div class="p-header__drawer c-hamburger js-hamburger u-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="p-header__pc-nav p-pc-nav u-desktop">
+        <ul class="p-pc-nav__items">
+          <li class="p-pc-nav__item">
+            <a href="#">news</a>
+          </li>
+          <li class="p-pc-nav__item">
+            <a href="#">service</a>
+          </li>
+          <li class="p-pc-nav__item">
+            <a href="#">works</a>
+          </li>
+          <li class="p-pc-nav__item">
+            <a href="#">company</a>
+          </li>
+          <li class="p-pc-nav__item">
+            <a href="#">recruit</a>
+          </li>
+          <li class="p-pc-nav__item">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="p-header__sp-nav p-sp-nav js-sp-nav">
+        <ul class="p-sp-nav__items">
+          <li class="p-sp-nav__item">
+            <a href="#">news</a>
+          </li>
+          <li class="p-sp-nav__item">
+            <a href="#">service</a>
+          </li>
+          <li class="p-sp-nav__item">
+            <a href="#">works</a>
+          </li>
+          <li class="p-sp-nav__item">
+            <a href="#">company</a>
+          </li>
+          <li class="p-sp-nav__item">
+            <a href="#">recruit</a>
+          </li>
+          <li class="p-sp-nav__item">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 下層ページのメインビュー -->
+  <section class="p-sub-mv">
+    <div class="p-sub-mv__title">
+      <div class="c-section-header c-section-header--white">
+        <h1 class="c-section-header__engtitle">contact</h1>
+        <p class="c-section-header__jatitle">お問い合わせ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- パンくず -->
+  <div class="c-breadcrumb">
+    <div class="l-inner">
+      <div>HOME >CONTACT</div>
+    </div>
+  </div>
+
+  <div class="l-page-contact p-page-contact">
+    <div class="p-page-contact__inner l-inner">
+      <div class="p-page-contact__text-block">
+        <p class="p-page-contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-mobile">お気軽にご相談ください。</p>
+      </div>
+      <div class="p-page-contact__content p-form">
+        <form action="" method="post" id="">
+          <dl class="p-form__item">
+            <dt>お問い合わせ種別 <span><sup>*</sup>必須</span></dt>
+            <dd class="p-form__radio">
+              <label><input type="radio" name="target" value="ラジオボタン" checked/><span>お仕事のご依頼・ご相談</span></label>
+              <label><input type="radio" name="target" value="ラジオボタン" /><span>お見積りのご依頼</span></label>
+              <label><input type="radio" name="target" value="ラジオボタン" /><span>採用について</span></label>
+              <label><input type="radio" name="target" value="ラジオボタン" /><span>その他</span></label>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>お名前 <span><sup>*</sup>必須</span></dt>
+            <dd>
+              <input type="text" name="your-name" value="" required />
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>会社名</dt>
+            <dd>
+              <input type="text" name="company" value="" />
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>メールアドレス <span><sup>*</sup>必須</span></dt>
+            <dd>
+              <input type="email" name="mail_address" value="" required />
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>電話番号 <span class="p-form__tel-info">（半角数字ハイフンなし）</span></dt>
+            <dd>
+              <input type="tel" name="your-tel" value="" />
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>お問い合わせ内容 <span><sup>*</sup>必須</span></dt>
+            <dd>
+              <textarea name="contents" required></textarea>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt>PON&nbsp;DESIGNをどちらでお知りになりましたか？<span><sup>*</sup>必須</span></dt>
+            <dd>
+              <select name="pondesign" required>
+                <option value="">選択してください</option>
+                <option value="option_1">Google/Yahoo検索</option>
+                <option value="option_2">SNS</option>
+                <option value="option_3">ブログ</option>
+                <option value="option_4">友人や知人</option>
+                <option value="option_5">その他</option>
+              </select>
+            </dd>
+          </dl>
+          <div class="p-form__btn">
+            <input type="button" value="送信する" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-to-top">
+    <a href="#top"><span></span></a>
+  </div>
+
+  <footer class="l-footer p-footer">
+    <div class="p-footer__inner">
+      <nav class="p-footer__nav p-footer-nav">
+        <div class="p-footer-nav__items">
+          <li class="p-footer-nav__item">
+            <a href="">home</a>
+          </li>
+          <li class="p-footer-nav__item">
+            <a href="">news</a>
+          </li>
+          <li class="p-footer-nav__item">
+            <a href="">service</a>
+          </li>
+          <li class="p-footer-nav__item">
+            <a href="">works</a>
+          </li>
+          <li class="p-footer-nav__item">
+            <a href="">recruit</a>
+          </li>
+          <li class="p-footer-nav__item">
+            <a href="">contact</a>
+          </li>
+        </div>
+      </nav>
+      <div class="p-footer__copyright">
+        <small>&copy;&nbsp;pon&nbsp;design</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $('.pagetop');
+  var topBtn = $('.c-to-top');
   topBtn.hide();
 
   // ボタンの表示設定
@@ -68,9 +68,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // headerスクロールで色が変わる
   function FixedAnime() {
     // メインビューの高さを取得
-    var height = Math.round($('.js-news').offset().top);
+    var height = $('.p-mv').height();
     var scroll = $(window).scrollTop();
-    if (scroll >= height){//news-sectionまで来たら
+    if (scroll > height){//メインビューの高さをこえたら
+          $('.js-header').addClass('change');//js-headerについているchangeというクラス名を付与
+    }else{
+          $('.js-header').removeClass('change');//changeというクラス名を除去
+    }
+  }
+
+  function SubFixedAnime() {
+    // サブメインビューの高さを取得
+    var height = $('.p-sub-mv').height();
+    var scroll = $(window).scrollTop();
+    if (scroll > height){//メインビューの高さをこえたら
           $('.js-header').addClass('change');//js-headerについているchangeというクラス名を付与
     }else{
           $('.js-header').removeClass('change');//changeというクラス名を除去
@@ -80,11 +91,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // 画面をスクロールをしたら動かしたい場合の記述
   $(window).scroll(function () {
     FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    SubFixedAnime();
   });
 
   // ページが読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function () {
     FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    SubFixedAnime();
   });
 
 });
