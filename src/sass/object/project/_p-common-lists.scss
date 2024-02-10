@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.p-common-lists__list {
+    padding: rem(20.5) 0;
+    border-bottom: 1px solid #DDD;
+    @include mq("md") {
+        padding: rem(30.5) 0;
+        display: flex;
+    }
+}
+
+.p-common-lists__list dt,
+.p-common-lists__list dd {
+    color: $black;
+    line-height: 1.8;
+    font-size: rem(16);
+    letter-spacing: 0.05em;
+    @include mq("md") {
+        font-size: rem(15);
+    }
+}
+
+.p-common-lists__list dt {
+    font-weight: $bold;
+    @include mq("md") {
+        width: rem(174);
+    }
+}
+
+.p-common-lists__list dd {
+    margin-top: rem(10);
+    font-family: $english-family;
+    @include mq("md") {
+        margin-top: 0;
+        width: calc(100% - 174px);
+    }
+}
